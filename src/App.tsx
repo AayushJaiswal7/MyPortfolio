@@ -1,13 +1,10 @@
-import Container from "./components/ui/Container/Container";
+import Hero from "./components/sections/Hero/Hero";
+// import Container from "./components/ui/Container/Container";
 
 function App() {
   return (
     <div className="min-h-screen bg-slate-950 flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-blue-500">
-      <Container>
-        <p>Click Me</p>
-      </Container>
-          </h1>
+      <Hero/>
     </div>
   );
 }
