@@ -1,17 +1,17 @@
 import Container from "@/components/ui/Container";
+import Section from "@/components/ui/Section";
 import HeroContent from "./HeroContent";
-import HeroImage from "./HeroImage";
+import HeroCard from "./HeroCard";
 
 export default function Hero() {
   return (
-    <section>
+    <Section id="hero" className="relative overflow-hidden">
       <Container>
-        <div className="flex flex-col gap-12 md:flex-row md:items-center md:justify-between">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           <HeroContent />
-
-          <HeroImage />
+          <HeroCard />
         </div>
       </Container>
-    </section>
+    </Section>
   );
 }
