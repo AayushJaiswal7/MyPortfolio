@@ -22,7 +22,7 @@ export default function HeroContent() {
       </div>
 
       {/* Name */}
-      <h1 className="text-6xl font-bold leading-[0.95] tracking-[-0.04em] text-white sm:text-7xl lg:text-8xl">
+      <h1 className="text-6xl font-bold leading-[0.95] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
         Aayush <span className="text-blue-500">Kumar</span>
       </h1>
 
