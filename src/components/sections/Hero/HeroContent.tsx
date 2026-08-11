@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Button from "@/components/ui/Button";
+import CTAButtons from "./CTAButtons";
 import SocialLinks from "./SocialLinks";
 
 export default function HeroContent() {
@@ -10,7 +10,7 @@ export default function HeroContent() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="flex max-w-2xl flex-col"
     >
-      {/* Intro badges */}
+      {/* Intro */}
       <div className="mb-6 flex flex-wrap items-center gap-3">
         <span className="rounded-full border border-blue-500/50 bg-blue-500/10 px-5 py-2 text-sm font-medium text-blue-300">
           👋 Hello, I'm
@@ -46,14 +46,8 @@ export default function HeroContent() {
       </p>
 
       {/* CTA */}
-      <div className="mt-8 flex flex-wrap gap-4">
-        <Button variant="primary" size="lg">
-          Download Resume
-        </Button>
-
-        <Button variant="secondary" size="lg">
-          Contact Me
-        </Button>
+      <div className="mt-8">
+        <CTAButtons />
       </div>
 
       {/* Social Links */}
