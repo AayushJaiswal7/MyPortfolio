@@ -10,8 +10,7 @@ export default function HeroContent() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="flex max-w-2xl flex-col"
     >
-      {/* Intro */}
-      <div className="mb-6 flex flex-wrap items-center gap-3">
+      <div className="mb-7 flex flex-wrap items-center gap-3">
         <span className="rounded-full border border-blue-500/50 bg-blue-500/10 px-5 py-2 text-sm font-medium text-blue-300">
           👋 Hello, I'm
         </span>
@@ -21,14 +20,12 @@ export default function HeroContent() {
         </span>
       </div>
 
-      {/* Name */}
-      <h1 className="text-5xl font-bold leading-[0.95] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
+      <h1 className="text-6xl font-bold leading-[0.92] tracking-[-0.045em] text-white sm:text-7xl lg:text-[5.5rem]">
         Aayush <span className="text-blue-500">Kumar</span>
       </h1>
 
-      {/* Role */}
-      <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-lg font-medium sm:text-xl">
-        <span className="text-slate-200">
+      <div className="mt-7 flex flex-wrap items-center gap-x-4 gap-y-2 text-lg font-semibold sm:text-xl">
+        <span className="text-white">
           Computer Science Engineer
         </span>
 
@@ -39,19 +36,16 @@ export default function HeroContent() {
         </span>
       </div>
 
-      {/* Description */}
       <p className="mt-6 max-w-xl text-base leading-7 text-slate-400 sm:text-lg">
         I build modern web applications with clean architecture,
         thoughtful interfaces, and reliable user experiences.
       </p>
 
-      {/* CTA */}
       <div className="mt-8">
         <CTAButtons />
       </div>
 
-      {/* Social Links */}
-      <div className="mt-8">
+      <div className="mt-9">
         <p className="mb-3 text-sm text-slate-400">
           Connect with me
         </p>
