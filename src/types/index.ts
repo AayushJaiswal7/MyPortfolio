@@ -17,7 +17,7 @@ export interface NavLink {
 export interface SocialLink {
   label: string;
   href: string;
-  icon: "github" | "linkedin" | "twitter" | "instagram" | "email";
+  icon: "github" | "linkedin" | "leetcode" | "email";
 }
 
 export interface Skill {
@@ -34,7 +34,6 @@ export interface Project {
   tags: string[];
   githubUrl: string;
   liveUrl: string;
-  featured?: boolean;
   icon: "graduation" | "home" | "shield" | "plane";
   accentColor: string;
 }
