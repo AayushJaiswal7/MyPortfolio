@@ -79,7 +79,7 @@ export default function SkillCard({ skill, index }: SkillCardProps) {
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.25, delay: index * 0.04 }}
       className={cn(
-        "group relative flex flex-col items-center rounded-card border border-white/10 bg-card/80 p-6 text-center transition-all duration-300",
+        "glass-card group relative flex flex-col items-center p-6 text-center transition-all duration-300",
         "hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10",
       )}
     >
