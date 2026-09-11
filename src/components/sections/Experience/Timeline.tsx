@@ -58,7 +58,7 @@ export default function Timeline() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "-80px" }}
-        className="flex flex-col gap-12 lg:gap-20"
+        className="flex flex-col gap-10 sm:gap-12 lg:gap-20"
         aria-label="Career timeline"
       >
         {timelineItems.map((item, index) => {
@@ -76,22 +76,22 @@ export default function Timeline() {
               className="relative"
             >
               {/* Mobile layout */}
-              <div className="relative pl-12 lg:hidden">
+              <div className="relative pl-11 sm:pl-14 lg:hidden">
                 {!isLast(index) && (
                   <span
                     className={cn(
-                      "absolute left-6 top-16 bottom-0 w-px -translate-x-1/2",
+                      "absolute left-5 top-16 bottom-0 w-px -translate-x-1/2 sm:left-6",
                       timelineColorStyles[item.color].connector,
                     )}
                     aria-hidden="true"
                   />
                 )}
 
-                <div className="absolute left-6 top-8 z-10 -translate-x-1/2">
+                <div className="absolute left-5 top-8 z-10 -translate-x-1/2 sm:left-6">
                   <TimelineNode item={item} index={index} />
                 </div>
 
-                <div className="pt-32">
+                <div className="pt-28 sm:pt-32">
                   <TimelineCard item={item} index={index} />
                 </div>
               </div>

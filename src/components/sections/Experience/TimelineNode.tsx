@@ -38,7 +38,7 @@ export default function TimelineNode({ item, index }: TimelineNodeProps) {
         <p className="text-xs font-semibold tracking-wide text-text">
           {item.step}
         </p>
-        <p className="mt-0.5 max-w-[128px] text-xs leading-snug text-text-secondary">
+        <p className="mt-0.5 max-w-[108px] text-xs leading-snug text-text-secondary sm:max-w-[128px]">
           {item.stepLabel}
         </p>
       </div>
