@@ -1,4 +1,5 @@
 import { Code2 } from "lucide-react";
+import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import SectionTitle from "@/components/ui/SectionTitle";
@@ -28,10 +29,16 @@ export default function Projects() {
           ))}
         </div>
 
-        <p className="mt-12 text-center text-caption text-text-secondary">
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+          className="mt-12 text-center text-caption text-text-secondary"
+        >
           Hover over a card to see{" "}
           <span className="text-primary">more details</span>
-        </p>
+        </motion.p>
       </Container>
     </Section>
   );
