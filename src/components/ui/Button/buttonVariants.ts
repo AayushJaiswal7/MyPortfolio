@@ -29,9 +29,6 @@ export const buttonVariants = cva(
 
         outline:
           "border border-primary/50 bg-transparent text-primary hover:-translate-y-0.5 hover:bg-primary/10",
-
-        ghost:
-          "bg-transparent text-white hover:bg-white/5",
       },
 
       size: {
